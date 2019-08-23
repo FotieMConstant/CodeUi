@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Import Google Icon Font-->
+    <link href="assets/fonts/font.googleapis.css" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="assets/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" href="assets/style.css">
+    <title>CoreUI editor</title>
+</head>
+<body>
+
+
+
+        <nav class="nav-extended">
+                <div class="nav-wrapper">
+                  <a href="#!" class="brand-logo">CoreUI</a>
+                  <ul class="right hide-on-med-and-down">
+                    <li><a>A link</a></li>
+                    <li><a>A second link</a></li>
+                    <li><a>A third link</a></li>
+                  </ul>
+                </div>
+                <div class="nav-content">
+                  <span class="nav-title-h3">Title</span>
+                  <a class="btn-floating btn-large halfway-fab waves-effect waves-light teal">
+                    <i class="material-icons">add</i>
+                  </a>
+                </div>
+        </nav>
+
+
+    <div class="main-editor">
+        <div class="row">
+                <div class="col s6">
+                        <div class="first" contenteditable>
+                            Write code here!
+                        </div> 
+
+                </div>
+                <div class="col s6">  
+                    <iframe class="second">
+                    </iframe>
+                </div>
+                <br>
+                <center>
+                <button class="btn">Run</button>
+                </center>   
+        </div>
+    </div>
+    
+        
+        
+    
+
+
+
+
+
+<!--Import Jquery before materialize.js-->
+<script type="text/javascript" src="assets/jquery-2.1.1.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="assets/js/materialize.min.js"></script>
+    <script src="assets/editor.js"></script>
+    <script>
+            //Init for the Navbar
+              document.addEventListener('DOMContentLoaded', function() {
+              var elems = document.querySelectorAll('.sidenav');
+              var instances = M.Sidenav.init(elems, options);
+            });
+
+            // Or with jQuery
+
+            $(document).ready(function(){
+              $('.sidenav').sidenav();
+            });
+
+
+
+
+            //Init for the Float button
+
+            document.addEventListener('DOMContentLoaded', function() {
+              var elems = document.querySelectorAll('.fixed-action-btn');
+              var instances = M.FloatingActionButton.init(elems, options);
+            });
+
+            // Or with jQuery
+
+            $(document).ready(function(){
+              $('.fixed-action-btn').floatingActionButton();
+            });
+
+          </script>
+</body>
+</html>

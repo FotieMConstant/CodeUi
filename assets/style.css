@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family:sans-serif;
+}
+
+.first {
+  background-color: black;
+  color: white;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  white-space: pre;
+  box-shadow: 0 1px 1px rgb(22, 22, 22);
+  outline: none;
+  padding: 1.5%;
+  height: 90vh;
+}
+
+.second {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  overflow-y: auto;
+  white-space: pre;
+  right: 0;
+  box-shadow: 0 1px 1px rgb(22, 22, 22);
+  padding: 0.4rem;
+  height: 90vh;
+}
+
+.main-editor{
+  margin-top: 10px;
+}
